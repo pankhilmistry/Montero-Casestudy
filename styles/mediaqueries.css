@@ -1,0 +1,763 @@
+/*-----------------------Media Queries----------------------------------*/
+
+/*@media (min-width: 640px) {
+  header li {
+    float: left;
+  }
+  header li a {
+    padding: 20px 30px;
+  }
+  header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  header .menu-icon {
+    display: none;
+  }
+}*/
+
+
+ /*---------------------------------- Extra small devices (phones, 600px and down) ----------------------------------*/
+
+
+@media screen and (max-width: 640px){
+
+header nav, header.heroyellow nav{
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ header nav ul, header.heroyellow nav ul{
+  margin: 0;
+  padding:1.25rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+ }
+
+
+ header nav ul li, header.heroyellow nav ul li, header nav ul li a, header.heroyellow nav ul li a{
+  margin: 0;
+  padding:0;
+}
+
+ #hero, #hero-mywork, #hero-aboutme {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  align-items: flex-start;
+}
+
+#hero a.btn-yellow{
+  font-size: 14px;
+}
+
+
+#hero h1, #hero-mywork h1, #hero-mywork h2, #hero-aboutme h1, #hero-aboutme h2{
+  font-size: 1.5rem;
+  width: 85vw;
+  margin: 2rem 0 0;
+  padding: 1rem 1.25rem 1rem;
+}
+
+#hero-mywork h2, #hero-aboutme h2{
+  font-size: 1.25rem;
+  padding-bottom: 4rem; 
+}
+
+#hero img {
+  width: 85%;
+  margin:0 auto;
+  padding: 4rem 0;
+}
+
+#hero ul{
+  margin:0;
+  padding:0 0 0 1.25rem;
+}
+
+#hero ul li{
+  width: 65%;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+#hero ul li:nth-of-type(1){
+  width: 90%;
+}
+
+.btn-yellow, .btn-black, .btn-dash {
+  font-size: 1rem;
+}
+
+.btn-dash {
+  font-size: 12px;
+}
+
+a.btn-circle {
+  display: none;
+}
+
+#work h2, #otherprojects h2, #journey h2{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 2rem 1.25rem 0;
+ }
+
+#work p {
+  margin:0;
+  padding:1rem 1.25rem 2rem;
+ }
+
+ #leftsideproject, #rightsideproject {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  padding: 2.5rem 0;
+ }
+
+img.shots {
+  width: 100%;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+div.leftsideproject, div.rightsideproject{
+  justify-self:flex-start;
+  margin:0;
+  padding: 0;
+ }
+
+#leftsideproject h3, #rightsideproject h3, div.leftsideproject img, div.rightsideproject img{
+  font-size: 2rem;
+  padding: 1rem 1.25rem 0;
+}
+
+ #leftsideproject p, #rightsideproject p{
+  padding:1rem 1.25rem 1rem;
+}
+
+ #leftsideproject sup{
+  font-size: 1rem;
+}
+
+#work ul{
+  width: 80%;
+  margin:0;
+  padding:0 0 0 1.25rem;
+}
+
+#work ul li{
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.otherprojects{
+  margin:0;
+  display: grid;
+  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: 1fr;
+}
+
+.tile{
+  width: 100vw;
+  grid-column: 1 / 2;
+}
+
+.tile:nth-of-type(2n){
+  flex-direction: row-reverse;
+  grid-column: 1 / 2;
+}
+
+.tiletext {
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.tile:nth-of-type(3){
+  flex-direction: row;
+}
+
+.tiletext h4{
+  font-size: 1rem;
+}
+
+.tiletext a {
+  font-size: 12px;
+}
+
+div.instax {
+  width: 85%;
+  margin-bottom: 4rem;
+}
+
+p.instax-text{
+  font-size: 1.25rem;
+}
+
+#journey h2{
+  font-size: 2rem;
+  width: 30vw;
+ }
+
+.journey-wrapper {
+  margin: 0;
+  grid-template-columns: 1fr;
+  padding: 2rem 0;
+  grid-template-areas: 
+  "p1"
+  "i1"
+  "p2"
+  "i2"
+  "p3"
+  "i3"
+  "i4"
+  "p4"
+  "i5"
+  "i6"
+  "p5"
+  "b1"
+  "i7"
+}
+
+p.journey-text {
+  padding: 2rem 1.25rem 0;
+}
+
+.journey-wrapper div.instax {
+  align-self: center;
+  margin: 0 auto 1rem;
+}
+
+.journey-wrapper ul{
+  width: 80%;
+  margin:0;
+  padding:0 0 0 1.25rem;
+}
+
+.journey-wrapper ul li{
+  margin: 0;
+  padding: 1rem 0;
+}
+
+#lastsection {
+  width: 85vw;
+  margin: 1rem 0;
+  padding: 1rem 1.25rem 1rem;
+}
+
+#lastsection h2, #lastsection h3, #lastsection h1 {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+#lastsection ul {
+  margin: 2rem 0;
+  padding: 0;
+  width: 90%;
+}
+
+#lastsection h3:nth-of-type(2){
+  font-size: 1.25rem;
+  padding-top: 2rem;
+}
+
+#lastsection ul.socialmedia {
+  margin: 0;
+  justify-content: flex-start;
+}
+
+#lastsection ul.socialmedia li{
+  padding: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+ul.socialmedia li a{
+  padding: 0 2rem 0 0;
+ }
+
+
+form {
+  width: 100%;
+  margin: 2.5rem 0;
+}
+
+.contactform input, .contactform textarea{
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contactform textarea{
+  height: 6rem;
+ }
+
+div.contactform:last-of-type {
+  width: 100%;
+  margin: 1rem 0;
+  justify-content: flex-start;
+}
+
+.contactform button{
+  margin:0;
+  width: 90%;
+ }
+
+.quote{
+  padding: 2rem 1.25rem;
+}
+.quote h1{
+  font-size: 1.75rem;
+}
+
+.notes {
+  flex-direction: column-reverse;
+  padding: 2rem 1.25rem;
+  align-items: flex-start;
+}
+.notes p {
+ padding-top: 1rem;
+ font-size: 12px;
+}
+
+} 
+
+/* ----------------------------------Small devices (portrait tablets and large phones, 600px and up) ----------------------------------*/
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+
+ header nav, header.heroyellow nav{
+  padding: 1rem 2rem;
+ }
+
+ header nav ul li a, header.heroyellow nav ul li a{
+  margin: 0;
+  padding:0;
+}
+
+#hero, #hero-mywork, #hero-aboutme {
+  grid-template-columns: 2fr 1.5fr;
+  align-items: center;
+}
+
+#hero-mywork{
+  grid-template-columns: 2.5fr 1fr;
+}
+
+#hero h1, #hero-mywork h1, #hero-aboutme h1{
+  font-size: 1.5rem;
+  margin: 2rem 0 0;
+  padding: 1rem 2rem;
+}
+
+#hero-mywork h2, #hero-aboutme h2{
+  font-size: 1.25rem;
+  margin: 1rem 0 0;
+  padding: 1rem 2rem 4rem;
+}
+
+#hero img {
+  padding: 1rem;
+}
+
+#hero ul{
+  margin:0;
+  padding:0 0 0 2rem;
+}
+
+#hero ul li{
+  width: 55%;
+  margin: 0;
+  padding: .5rem 0;
+}
+
+#hero ul li:nth-of-type(1){
+  width: 85%;
+}
+
+.btn-yellow, .btn-black, .btn-dash {
+  font-size: 1rem;
+}
+
+.btn-dash {
+  font-size: 12px;
+}
+
+#work h2, #otherprojects h2, #journey h2{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 2rem 2rem 0;
+}
+
+#work p {
+  margin:0;
+  padding:1rem 2rem 2rem;
+ }
+
+#leftsideproject, #rightsideproject {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  padding: 2.5rem 0;
+ }
+
+img.shots {
+  width: 100%;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+div.leftsideproject, div.rightsideproject{
+  justify-self:flex-start;
+  margin:0;
+  padding: 0;
+ }
+
+#leftsideproject h3, #rightsideproject h3, div.leftsideproject img, div.rightsideproject img{
+  font-size: 2rem;
+  padding: 1rem 2rem 0;
+}
+
+ #leftsideproject p, #rightsideproject p{
+  padding:1rem 2rem 1rem;
+}
+
+ #leftsideproject sup{
+  font-size: 1rem;
+}
+
+#work ul{
+  width: 40%;
+  margin:0;
+  padding:0 0 0 2rem;
+}
+
+#work ul li{
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.otherprojects{
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+.tiletext {
+  margin: 0 auto;
+  padding:1rem 2rem;
+}
+
+.tiletext h4{
+  font-size: 1rem;
+}
+
+.tiletext a {
+  font-size: 12px;
+}
+
+#journey h2{
+  font-size: 2rem;
+ }
+
+div.instax {
+  width: 85%;
+  padding: 8px 8px 0;
+}
+
+p.instax-text{
+  padding: .8rem 0;
+  font-size: 1.25rem;
+}
+
+.journey-wrapper {
+  grid-template-columns: 2fr 1.5fr;
+}
+
+p.journey-text {
+  margin: 0;
+  padding: 0 2rem;
+}
+
+strong.journey-text {
+  font-size: 1.25rem;
+}
+
+.journey-wrapper ul{
+  width: 60%;
+  margin:0;
+  padding:0 0 0 2rem;
+}
+
+.journey-wrapper ul li{
+  margin: 0;
+  padding: 1rem 0;
+}
+
+#lastsection {
+  margin: 2rem auto;
+}
+
+#lastsection h2, #lastsection h1 {
+  font-size: 1.5rem;
+}
+
+#lastsection ul {
+  width: 50%;
+}
+
+#lastsection h3:nth-of-type(2){
+  padding-top: 2rem;
+}
+
+#lastsection ul.socialmedia {
+  width: 80%;
+}
+
+form {
+  width: 60vw;
+}
+
+.contactform input, .contactform textarea{
+  font-size: 1.25rem;
+  width:60vw;
+}
+div.contactform:last-of-type {
+  margin: 1rem auto;
+  width: 100%;
+}
+
+ .contactform button{
+  width: 60%;
+ }
+
+} 
+
+
+
+/*@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+ 
+    
+}*/
+
+
+
+/*---------------------------------- Medium devices (landscape tablets, 768px and up) ----------------------------------*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+   header nav, header.heroyellow nav{
+  padding: 1rem 2rem;
+ }
+
+#hero, #hero-mywork, #hero-aboutme {
+  grid-template-columns: 2fr 1.25fr;
+}
+
+#hero-mywork{
+  grid-template-columns: 2.5fr 1fr;
+}
+
+#hero h1, #hero-mywork h1, #hero-aboutme h1{
+  font-size: 1.5rem;
+  margin: 2rem 0 0;
+  padding: 1rem 2rem;
+}
+
+#hero-mywork h2, #hero-aboutme h2{
+  font-size: 1.25rem;
+  margin: 1rem 0 0;
+  padding: 1rem 2rem 4rem;
+}
+
+#hero img {
+  padding: 1rem;
+}
+
+#hero ul{
+  margin:0;
+  padding:0 0 0 2rem;
+}
+
+#hero ul li{
+  width: 40%;
+  margin: 0;
+  padding: .5rem 0;
+}
+
+#hero ul li:nth-of-type(1){
+  width: 60%;
+}
+
+.btn-yellow, .btn-black, .btn-dash {
+  font-size: 1rem;
+}
+
+.btn-dash {
+  font-size: 12px;
+}
+
+#work h2, #otherprojects h2, #journey h2{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 2rem 2rem 0;
+}
+
+#work p {
+  margin:0;
+  padding:1rem 2rem 2rem;
+ }
+
+#leftsideproject, #rightsideproject {
+  padding: 2.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+ }
+
+div.leftsideproject, div.rightsideproject{
+  margin:0 auto;
+  padding: 0;
+ }
+
+ div.rightsideproject{
+  grid-column: 3 / 4;
+ }
+
+#leftsideproject h3, #rightsideproject h3, div.leftsideproject img, div.rightsideproject img{
+  font-size: 2rem;
+  padding: 1rem 2rem 0;
+}
+
+ #leftsideproject p, #rightsideproject p{
+  padding:1rem 2rem 1rem;
+}
+
+ #leftsideproject sup{
+  font-size: 1rem;
+}
+
+#work ul{
+  width: 90%;
+  margin:0;
+  padding:0 1rem;
+}
+
+#work ul li{
+  margin: 0;
+  padding: .5rem 1rem;
+}
+
+.otherprojects{
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+.tiletext {
+  margin: 0 auto;
+  padding:1rem 2rem;
+}
+
+.tiletext h4{
+  font-size: 1rem;
+}
+
+.tiletext a {
+  font-size: 12px;
+}
+
+#journey h2{
+  font-size: 2rem;
+ }
+
+div.instax {
+  width: 85%;
+  padding: 8px 8px 0;
+}
+
+p.instax-text{
+  padding: .8rem 0;
+  font-size: 1.25rem;
+}
+
+.journey-wrapper {
+  grid-template-columns: 2fr 1.5fr;
+}
+
+p.journey-text {
+  margin: 0;
+  padding: 0 2rem;
+}
+
+strong.journey-text {
+  font-size: 1.25rem;
+}
+
+.journey-wrapper ul{
+  width: 60%;
+  margin:0;
+  padding:0 0 0 2rem;
+}
+
+.journey-wrapper ul li{
+  margin: 0;
+  padding: 1rem 0;
+}
+
+#lastsection {
+  margin: 2rem auto;
+}
+
+#lastsection h2, #lastsection h1 {
+  font-size: 1.5rem;
+}
+
+#lastsection ul {
+  width: 50%;
+}
+
+#lastsection h3:nth-of-type(2){
+  padding-top: 2rem;
+}
+
+#lastsection ul.socialmedia {
+  width: 80%;
+}
+
+form {
+  width: 60vw;
+}
+
+.contactform input, .contactform textarea{
+  font-size: 1.25rem;
+  width:60vw;
+}
+div.contactform:last-of-type {
+  margin: 1rem auto;
+  width: 100%;
+}
+
+ .contactform button{
+  width: 60%;
+ }
+
+} 
+
+/* ----------------------------------Extra large devices (TV monitors) ----------------------------------*/
+
+/*@media screen and (min-width: 1920px) {
+
+
+
+}*/
